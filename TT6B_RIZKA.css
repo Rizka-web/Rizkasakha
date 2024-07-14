@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: montserrat; sans-serif;
+}
+
+h2,h3 {
+    color: rgb(140, 109, 71);
+}
+
+footer {
+    background-color: bisque;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.gambar-artikel {
+    width: 100%;
+    max-height: cover;
+    object-fit: cover;
+}
+
+.gambar-testimoni {
+    width: 200px;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    background-color: hsl(60, 38%, 69%);
+    color: white;
+    text-align: center;
+    padding: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: rgb(117, 105, 89);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+#content {
+    flex-grow: 6;
+}
+
+#aside {
+    flex-grow: 1;
+}
+
+/* TAMPILAN HP */
+@media screen and (min-width: 320px) and (max-width : 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        text-align: center;
+    }
+    .jumbotron {
+        font-size: 18px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    aside {
+        text-align: center;
+    }
+}
+
+/* TAMPILAN TABLET */
+@media screen and (min-width: 760px) and (max-width : 1023px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        text-align: center;
+    }
+    .jumbotron {
+        font-size: 18px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    aside {
+        text-align: center;
+    }
+}
